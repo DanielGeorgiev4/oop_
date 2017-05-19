@@ -1,14 +1,9 @@
 #include <iostream>
-#include "Commander.h"
+//#include "Stack.h"
+#include "list.h"
 using namespace std;
 int main()
 {
-	Knight test;
-	Commander a(10),b(test);
-	test.print_stats();
-	b.print_stats();
-	test.buff();
-	test.print_stats();
-	b.print_stats();
-	cout << endl;
+	Person *arr[3] = { new Kid,new Kid, new Adult };
+	for (unsigned i = 0; i < 3; i++) arr[i]->get_days();
 }
